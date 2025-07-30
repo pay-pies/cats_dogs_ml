@@ -25,9 +25,13 @@ if photo is not None: #hellooo
     img_array = np.expand_dims(img_array, axis=0)
 
     pred = model.predict(img_array)[0][0]
-    st.write("The image is " + str(100-(100*pred)) + '%' + " likely to be a cat and "+ str(100*pred) + '%'" likely to be a dog.")
-    if pred > 0.5:
+    st.write(f"The image is {(100-(100*pred)):.2f}% likely to be a cat and {(100*pred):.2f}% likely to be a dog.")
+    if pred > 0.75:
         st.write("Therefore, this image is a Dog!")
+    elif pred > 0.5:
+        st.write("The model is not very confident about this image, but it is more likely to be a dog.")
+    elif pred > 0.25:
+        st.write("The model is not very confident about this image, but it is more likely to be a cat.")
     else:
         st.write("Therefore, this image is a Cat!")
 
