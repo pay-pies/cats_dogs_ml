@@ -16,7 +16,7 @@ st.title('Cats vs Dogs Image Classification')
 st.text('Note: This model has an accuracy of about 0.85 on the test set so it may not be perfect! Only PNG, JPG and JPEG images are supported.')
 photo = st.file_uploader("Upload an image of a cat or dog", type=["jpg", "jpeg", "png"])
 
-if photo is not None:
+if photo is not None: #hellooo
     img = Image.open(photo)  
     img = img.resize(target_size)  
     img_array = np.array(img, dtype=np.float32) / 255.0  
