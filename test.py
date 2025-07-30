@@ -1,10 +1,10 @@
-import os
+#import os
 import numpy as np
 from tensorflow import keras
 import streamlit as st
-from tensorflow.keras.preprocessing import image
+#from tensorflow.keras.preprocessing import image
 from PIL import Image
-from tensorflow.keras.utils import load_img, img_to_array
+#from tensorflow.keras.utils import load_img, img_to_array
 
 model_path = r"C:\Users\Halley\Documents\Projects\Summer of Making\cats_dogs_ml_data\cats_dogs_sequential_model.keras" 
 model = keras.models.load_model(model_path)
