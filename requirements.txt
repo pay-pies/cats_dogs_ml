@@ -1,0 +1,7 @@
+streamlit
+tensorflow
+numpy
+os
+tensorflow.keras.preprocessing
+PIL
+tensorflow.keras.utils
