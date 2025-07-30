@@ -6,7 +6,7 @@ import streamlit as st
 from PIL import Image
 #from tensorflow.keras.utils import load_img, img_to_array
 
-model_path = r"C:\Users\Halley\Documents\Projects\Summer of Making\cats_dogs_ml_data\cats_dogs_sequential_model.keras" 
+model_path = ".\\cats_dogs_sequential_model.keras" 
 model = keras.models.load_model(model_path)
 
 target_size = (128, 128) 
