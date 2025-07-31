@@ -2,13 +2,11 @@ import numpy as np
 from tensorflow import keras
 import streamlit as st
 from PIL import Image
-import pathlib
 
 st.markdown(
     """
     <style>
     .stApp {
-        /*background-color: #716552ff;*/
         background-image: url("https://hc-cdn.hel1.your-objectstorage.com/s/v3/04c50d2ba191391c200fc554cc0e40cbc78ad578_screenshot_2025-07-31_133349.png");
         background-size: cover; 
         background-position: center; 
