@@ -2,7 +2,7 @@
 ## About:
 This is a trained model which will classify between cats and dogs. The project can be accessed [here](https://cats-dogs.streamlit.app/) - deployed on Streamlit 
 
-I have used Python + incorporated Streamlit code + CSS styling in 'st.markdown', edited in Microsoft VS Code.
+I have used Python (in a Jupyter Notebook & a raw Python file) + incorporated Streamlit code + CSS styling in 'st.markdown', edited in Microsoft VS Code.
 ## How To Use:
 Click the button that will direct you to your files where you will upload an image, which the model will say is a cat or a dog.
 
