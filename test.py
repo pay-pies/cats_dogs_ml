@@ -2,6 +2,70 @@ import numpy as np
 from tensorflow import keras
 import streamlit as st
 from PIL import Image
+import pathlib
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        /*background-color: #716552ff;*/
+        background-image: url("https://hc-cdn.hel1.your-objectstorage.com/s/v3/04c50d2ba191391c200fc554cc0e40cbc78ad578_screenshot_2025-07-31_133349.png");
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: monospace !important;
+        color: #e5e4ca !important; 
+    }
+
+    div[data-testid="stText"], div[data-testid*="stMarkdownContainer"] {
+        font-family: monospace !important;
+        color: #e5e4ca !important;
+    }
+
+    [data-testid="stFileUploaderDropzone"] {
+        background-color: #555555 !important;
+        border: 2px dashed #e5e4ca !important;
+        color: #e5e4ca !important; 
+    }
+
+    [data-testid="stFileUploaderDropzone"] p {
+        font-family: monospace !important;
+        color: #e5e4ca !important;
+    }
+
+    [data-testid="stFileUploaderDropzone"] svg {
+        fill: #e5e4ca !important; 
+    }
+
+    [data-testid="stFileUploader"] small {
+        color: #e5e4ca !important; 
+        font-family: monospace !important;
+    }
+
+    [data-testid="stFileUploader"] button {
+        background-color: #555555 !important; 
+        color: #e5e4ca !important;
+        font-family: monospace !important;
+        border: 1px solid #e5e4ca !important; 
+    }
+
+    [data-testid="stFileUploader"] button:hover {
+        background-color: #777777 !important; 
+    }
+    
+    img[data-testid="stLogo"] {
+        height: 100px;
+        width: auto;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 model_path = "cats_dogs_sequential_model.keras" 
 model = keras.models.load_model(model_path)
