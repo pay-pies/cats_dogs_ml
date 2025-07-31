@@ -8,6 +8,7 @@ model = keras.models.load_model(model_path)
 
 target_size = (128, 128) 
 
+st.logo("https://hc-cdn.hel1.your-objectstorage.com/s/v3/067f2fab7abbab88ffa7e562645965e63d6ae76a_logo.jpg")
 st.title('Cats vs Dogs Image Classification')
 st.text('Note: This model has an accuracy of about 0.85 on the test set so it may not be perfect! Only JPG images are supported, sorry.)')
 photo = st.file_uploader("Upload an image of a cat or dog", type=["jpg"])
