@@ -6,7 +6,8 @@ I have used Python (in a Jupyter Notebook & a raw Python file) + incorporated St
 ## How To Use:
 Click the button that will direct you to your files where you will upload an image, which the model will say is a cat or a dog.
 
-Time spent: 8 hours 59 mins
+Time spent: 8 hours 59 mins https://hackatime-badge.hackclub.com/U07UMUZA24A/cats_dogs_ml https://hackatime-badge.hackclub.com/U07UMUZA24A/cats_vs_dogs
+
 ## Note:
 This does not have 100% accuracy and may make mistakes.
 
